@@ -24,10 +24,15 @@ Now let s add a "Dockerfile" in the project:
 ![image](https://github.com/user-attachments/assets/5bb79c9f-5524-4a5f-9a1c-0250a1da33b9)
 
 content:
+
 From camunda/camunda-bpm-platform:latest
+
 COPY ./target/*.jar /usr/local/tomcat/webapps/camunda-springboot-docker.jar
+
 ENTRYPOINT ["java","-jar","/usr/local/tomcat/webapps/camunda-springboot-docker.jar"]
 
+
+Explanation:
 * From camunda/camunda-bpm-platform:latest -> it will pull the camunda image
 * COPY ./target/*.jar /usr/local/tomcat/webapps/camunda-springboot-docker.jar  ->  COPY source destination (the source is our generated jar in target , and the destination is the path in docker)
 * ENTRYPOINT ["java","-jar","/usr/local/tomcat/webapps/camunda-springboot-docker.jar"]  -> the entrypoint to the jar
