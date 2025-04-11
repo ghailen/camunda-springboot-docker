@@ -3,6 +3,7 @@
 Today we gonna learn how to dockerize a camunda spring boot application.
 
 First thing is to create a camunda spring boot project using this tutoriel:
+
 https://medium.com/@ghailenemark/camunda-with-spring-boot-example-e8277f17d7bf
 ![image](https://github.com/user-attachments/assets/f8fabca2-f357-4b3f-85ab-3e0b7a52a857)
 
